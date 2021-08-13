@@ -1,0 +1,16 @@
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: green;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+ul li a{
+  margin-right: 10px;
+  color: white;
+}
