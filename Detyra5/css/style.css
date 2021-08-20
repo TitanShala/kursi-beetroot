@@ -1,0 +1,58 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: green;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+ul li a {
+  margin-right: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+ul li a:hover {
+  color: rgb(69, 44, 44);
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+.main-section {
+  height: 100vh;
+  background-color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-section h1 {
+  display: block;
+  color: white;
+  font-size: 64px;
+}
+
+li::before{
+  content:"";
+  display: block;
+  width: 22px;
+  height: 10px;
+  margin: 10px 5px 0 10px;
+  background: url("../apple.svg");
+}
+
+li::after{
+  content:"";
+  display: block;
+  width: 22px;
+  height: 10px;
+  margin: 10px 5px 0 10px;
+  background: url("../apple.svg");
+}
+
