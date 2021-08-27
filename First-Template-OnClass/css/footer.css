@@ -1,0 +1,47 @@
+/*FOOTER*/
+footer {
+  margin-top: 145px;
+  border-top: 1px solid #979797;
+  padding-top: 104px;
+  margin-bottom: 80px;
+}
+footer .container .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .card {
+  padding-top: 35px;
+}
+footer .last-card {
+  padding-top: 70px;
+}
+footer .container {
+  padding-left: 15px;
+}
+footer .last-card {
+}
+footer input {
+  width: 325px;
+  height: 48px;
+  border-radius: 5px;
+  border: 1px solid #bcd0e5;
+  margin-bottom: 20px;
+}
+footer button {
+  display: block;
+  width: 131px;
+  height: 39px;
+  border-radius: 5px;
+  border: none;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  margin-top: 10px;
+}
+footer ul a {
+  text-decoration: none;
+  color: #544837;
+}
