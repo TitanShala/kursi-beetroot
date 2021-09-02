@@ -1,0 +1,30 @@
+footer {
+  padding-left: 215px;
+  padding-right: 215px;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+  border-bottom: 2px solid black;
+  margin-bottom: 55px;
+}
+.footer-nav__list {
+  display: flex;
+}
+.footer-nav__list li:not(:last-child) {
+  margin-right: 70px;
+}
+.footer-icons {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.footer-copyright {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.footer-copyright span {
+  margin-left: 10px;
+  font-family: "Questrial", sans-serif;
+}

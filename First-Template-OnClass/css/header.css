@@ -16,7 +16,7 @@ header .wrapper {
   display: flex;
   align-items: center;
 }
-.header-navigation ul {
+.header__list {
   display: flex;
   flex-direction: row;
   margin-right: 50px;
