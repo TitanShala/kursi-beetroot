@@ -86,3 +86,18 @@ a {
 .header-nav__button {
   padding: 13px 20px;
 }
+body {
+  position: relative;
+}
+.arrow {
+  width: 50px;
+  position: absolute;
+  left: 50px;
+  cursor: pointer;
+  transform: translateY(100px);
+}
+.activearrow {
+  bottom: 50px;
+  left: 50px;
+  transform: rotate(180deg);
+}

@@ -75,7 +75,7 @@
   background-color: #fafafa;
   padding-bottom: 24px;
 }
-.gift-wrapper__card:first-child {
+.gift-wrapper__card:hover {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -157,7 +157,7 @@
 .about-wrapper__card {
   padding: 50px;
 }
-.about-wrapper__card:first-child {
+.about-wrapper__card:hover {
   box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.088);
 }
 .about-wrapper__card h5 {

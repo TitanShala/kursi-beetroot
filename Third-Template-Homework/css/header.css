@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "primary-regular";
+  src: url("/fonts/AvenirNextLTPro-Regular.otf");
+}
+@font-face {
+  font-family: "primary-bold";
+  src: url("/fonts/AvenirNextLTPro-Bold.otf");
+}
+@font-face {
+  font-family: "primary-italic";
+  src: url("/fonts/AvenirNextLTPro-It.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "primary-regular";
+  color: #13253a;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  line-height: 1.688rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "primary-bold";
+}
+.bg-white {
+  background-color: #ffff;
+}
+.bg-gray {
+  background-color: #f4f6f7;
+}
+.bg-orange {
+  background-color: #ff7f57;
+}
+.bg-darkblue {
+  background-color: #11364e;
+}
+.p-introduction {
+  color: #2557ab;
+  margin-bottom: 5px;
+}
+.btn {
+  padding: 19px 42px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.container {
+  max-width: 1180px;
+  margin: auto;
+}
+.header-nav {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+}
+.header-list li:not(:last-child) {
+  padding-right: 50px;
+}
+.header-list li a {
+  font-size: 14px;
+  font-family: "primary-bold";
+}
