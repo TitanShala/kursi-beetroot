@@ -1,0 +1,100 @@
+.Presentation-section {
+  padding: 30px 0 105px 0;
+}
+.Presentation-section__title {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.875em;
+  text-transform: uppercase;
+}
+.presentation-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.presentation-rating {
+  padding: 7px;
+  text-align: center;
+  border-radius: 4px;
+}
+.presentation-rating__p {
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 10px;
+  margin-bottom: 2px;
+}
+.presentation-rating__h::after {
+  content: "5";
+  font-size: 12px;
+}
+.presentation-body {
+  display: flex;
+  justify-content: space-between;
+}
+.presentation-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.presentation-info {
+  padding: 25px 30px;
+  background-color: #0a223d;
+  color: #ffff;
+  text-align: center;
+  flex-grow: 1;
+  margin-bottom: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.presentation-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.presentation-Left {
+  text-align: left;
+  /* margin-right: 90px; */
+}
+.presentation-body__image {
+  margin-right: 30px;
+}
+.presentation-left__price {
+  font-size: 1.5em;
+  line-height: 2em;
+  font-weight: 800;
+}
+.presentation-left__price::before {
+  content: "price starts as";
+}
+.presentation-left__price::after {
+  content: "per room / night";
+  margin-bottom: 10px;
+}
+.presentation-left__price::before,
+.presentation-left__price::after {
+  font-size: 10px;
+  display: block;
+  font-weight: 400;
+  line-height: 0.85em;
+}
+.presentation-content__button {
+  width: 100%;
+  color: #ffff;
+  border-radius: 6px;
+  padding: 13px 0;
+}
+.presentation-right_guests::before {
+  content: url("../images/user-icon.svg");
+}
+.presentation-right_room::before {
+  content: url("../images/home-icon.svg");
+}
+.presentation-map {
+  flex-grow: 1;
+}
+.presentation-map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}

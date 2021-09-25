@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>Titan-FirstTemplate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/css/app.min.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="headerIntroduction">
+          <div class="headerIntroduction-brand">
+            <img class="header-brand__image" src="./src/images/logo.svg" />
+          </div>
+          <div class="headerIntroduction-wrapper">
+            <form class="headerIntroduction-form" method="GET">
+              <input
+                class="headerIntroduction-form__input"
+                type="text"
+                placeholder="Search Location"
+              />
+              <button
+                class="headerIntroduction-form__button background--primary"
+              >
+                <img src="./src/images/search-icon.svg" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="headerNavigation">
+        <div class="container">
+          <ul class="headerNavigation-list">
+            <li><a href="#">All deals</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Activities</a></li>
+            <li><a href="#">Hotel day packages</a></li>
+            <li><a href="#">Restaurants</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Rodrigues</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="presentation">
+        <div class="container">
+          <div class="presentation-header">
+            <h2 class="presentation-header__title">Grand Hilton Hotel</h2>
+            <div class="presentation-header__rating background--primary">
+              <p class="color--white">User Ratings</p>
+              <h4 class="color--white">4.5/</h4>
+            </div>
+          </div>
+          <div class="presentation-body">
+            <div class="presentation-body__image">
+              <img src="./src/images/hawai-hotel.jpg" />
+            </div>
+            <div class="presentation-content">
+              <div class="presentation-info">
+                <div class="presentation-wrapper">
+                  <div class="presentation-Left">
+                    <h2 class="presentation-left__price">$8,500</h2>
+                    <h4>Quick Booking</h4>
+                  </div>
+                  <div class="presentation-right">
+                    <p class="presentation-right_guests">2 x Guests</p>
+                    <p class="presentation-right_room">1 x Room</p>
+                    <h4 class="presentation-right_phone">12100</h4>
+                  </div>
+                </div>
+                <button
+                  class="background--primary presentation-content__button"
+                >
+                  View Other Options
+                </button>
+              </div>
+              <div class="presentation-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6307.3078012075875!2d-122.42970977261359!3d37.77471270711318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a4f2daa76f%3A0x279649fadfa0ba2a!2sFillmore%20St%20%26%20Hayes%20St!5e0!3m2!1sen!2s!4v1632467857905!5m2!1sen!2s"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <!-- SCRIPTS -->
+  <script src="dist/js/app.min.js" type="text/javascript"></script>
+</html>
