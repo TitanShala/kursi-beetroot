@@ -1,6 +1,6 @@
 .presentation {
   padding: 30px 0 105px 0;
-  &-header {
+  .presentation-header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
@@ -9,6 +9,7 @@
       font-weight: 700;
       line-height: 1.875em;
       text-transform: uppercase;
+      color: #333333;
     }
     &__rating {
       padding: 7px;
@@ -26,8 +27,245 @@
       }
     }
   }
-  &.presentation-body {
+  .presentation-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    @include tablet-big {
+      column-gap: 30px;
+    }
+    @include tablet {
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+    }
+    .presentation-content {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      row-gap: 26px;
+      @include tablet {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+      }
+      @include mobile {
+        grid-template-columns: 1fr;
+      }
+      .presentation-info {
+        padding: 25px 30px;
+        background-color: #0a223d;
+        color: #ffff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .presentation-wrapper {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          .presentation-left {
+            text-align: left;
+            &__price {
+              font-size: 24px;
+              line-height: 2em;
+              font-weight: 800;
+            }
+            &__price::before,
+            &__price::after {
+              font-size: 10px;
+              display: block;
+              font-weight: 400;
+              line-height: 0.85em;
+            }
+            &__price::before {
+              content: "price starts as";
+            }
+            &__price::after {
+              content: "per room / night";
+            }
+          }
+          .presentation-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: left;
+            p {
+              font-size: 12px;
+            }
+            &__guests::before {
+              content: url("../images/user-icon.svg");
+              margin-right: 10px;
+              margin-bottom: 8px;
+            }
+            &__room::before {
+              content: url("../images/home-icon.svg");
+              margin-right: 10px;
+            }
+          }
+        }
+        .presentation-bottom {
+          display: flex;
+          justify-content: space-between;
+          h4 {
+            font-size: 18px;
+            line-height: 1.53em;
+            font-weight: 600;
+          }
+          &__phone {
+            text-align: left;
+          }
+          &__phone::before {
+            content: url("../images/phone-icon.svg");
+            margin-right: 10px;
+          }
+        }
+        &__button {
+          margin-top: 17px;
+          color: #ffff;
+          border-radius: 6px;
+          padding: 13px 0;
+        }
+      }
+      .presentation-map {
+        @include tablet {
+          // display: inline-block;
+          // height: 100%;
+          // margin-top: 0px;
+          // margin-left: 15px;
+          // max-width: calc(50% - 15px);
+        }
+        iframe {
+          width: 100%;
+          height: 100%;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}
+
+.offers {
+  padding-bottom: 60px;
+  .offers-Navigation {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 54px;
+    @include mobile {
+      width: 100%;
+      overflow: scroll;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    li {
+      @include mobile {
+        margin-right: 40px;
+      }
+    }
+    a {
+      font-weight: 700;
+      font-size: 0.875em;
+    }
+    .active {
+      color: #ec1f46;
+      border-bottom: 4px solid #ec1f46;
+      padding-bottom: 14px;
+    }
+  }
+  .offers-content {
+    &__title {
+      color: #333333;
+      font-size: 1.5em;
+      line-height: 1.875em;
+      margin-bottom: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .offers-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 30px;
+      @include tablet {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+      }
+      .offers-highlights {
+        display: flex;
+        flex-direction: column;
+        &__title {
+          padding: 16px 24px;
+          background-color: #0a223d;
+          color: #ffffff;
+        }
+        .offers-listwrapper {
+          background-color: #ffffff;
+          ul {
+            padding: 26px 28px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 3fr;
+            column-gap: 20%;
+            li {
+              display: flex;
+              align-items: center;
+              margin-bottom: 22px;
+              font-size: 12px;
+              line-height: 0.9em;
+              align-items: center;
+            }
+            li::before {
+              content: url("../images/check.svg");
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      .offers-details {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        &__title {
+          padding: 16px 24px;
+          background-color: #0a223d;
+          color: #ffffff;
+        }
+        .offers-detailsContent {
+          display: flex;
+          flex-direction: row;
+          height: 100%;
+          padding: 26px 28px 18px 28px;
+          &__description {
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p {
+              display: flex;
+              font-size: 12px;
+              line-height: 15px;
+            }
+            p::before {
+              display: inline-block;
+              content: url("../images/check.svg");
+              margin-right: 10px;
+            }
+            span {
+              margin-left: 28px;
+              font-size: 12px;
+            }
+          }
+          &__date {
+            width: 50%;
+            p {
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              font-size: 12px;
+            }
+            p::before {
+              content: url("../images/calendar.svg");
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
   }
 }

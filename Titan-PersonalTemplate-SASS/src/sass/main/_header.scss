@@ -4,6 +4,12 @@
   box-sizing: border-box;
   font-family: "Mulish", sans-serif !important;
 }
+header {
+  background-color: #ffffff;
+}
+body {
+  background-color: #f5fafe;
+}
 div {
   border-radius: 6px;
 }
@@ -66,13 +72,40 @@ ul {
 .headerNavigation {
   background: #0a223d;
   border-radius: 0px;
+  @include tablet {
+  }
   &-list {
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
+    @include tablet {
+      display: none;
+      background-color: rgba($color: #000000, $alpha: 0.7);
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      // display: none;
+      flex-direction: column;
+      justify-content: center;
+    }
+    li {
+      @include tablet {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    }
     a {
       color: #ffffff;
       text-transform: uppercase;
+      @include tablet {
+        width: 100%;
+        font-size: 24px;
+        padding: 15px 0;
+      }
     }
   }
 }
