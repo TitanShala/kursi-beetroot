@@ -7,6 +7,11 @@
 /*=====================================
 =            MEDIA QUERIES            =
 =====================================*/
+@mixin mobile-s {
+  @media only screen and (max-width: 540px) {
+    @content;
+  }
+}
 /// Media Query mixin for mobile devices 0 < 768
 ///@author Beetroot
 ///@content CSS blocks on the desired element or if used by itself you can play selectors inside
