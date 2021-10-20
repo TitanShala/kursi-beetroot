@@ -1,7 +1,6 @@
 function whileLoop(endNumber) {
   if (!endNumber) return console.log("Type a number please");
-  else if (endNumber == 0 || endNumber < 0)
-    return console.log("Number must be greater than 0");
+  if (endNumber <= 0) return console.log("Number must be greater than 0");
 
   let counter = 1;
   while (counter <= endNumber) console.log("While loop: " + counter++);
@@ -9,20 +8,16 @@ function whileLoop(endNumber) {
 
 function doWhileLoop(endNumber) {
   if (!endNumber) return console.log("Type a number please");
+  if (endNumber <= 0) return console.log("Number must be greater than 0");
   let counter = 1;
   do {
-    if (!endNumber) return console.log("Type a number please");
-    else if (endNumber == 0 || endNumber < 0)
-      return console.log("Number must be greater than 0");
-
     console.log("Do while loop: " + counter++);
   } while (counter <= endNumber);
 }
 
 function forLoop(endNumber) {
   if (!endNumber) return console.log("Type a number please");
-  else if (endNumber == 0 || endNumber < 0)
-    return console.log("Number must be greater than 0");
+  if (endNumber <= 0) return console.log("Number must be greater than 0");
 
   for (let i = 0; i <= endNumber; i++) console.log("For loop: " + i);
 }
@@ -35,17 +30,18 @@ function renderEvenNumbers(fistNumber, endNumber) {
   var isFirstNumberOdd = fistNumber % 2 == 0;
 
   while (fistNumber <= endNumber) {
-    if (isFirstNumberOdd) console.log(fistNumber);
-    else {
-      console.log(++fistNumber);
+    if (!isFirstNumberOdd) {
+      fistNumber++;
       isFirstNumberOdd = true;
     }
+
+    console.log(fistNumber);
     fistNumber += increment;
   }
 }
 
 whileLoop(10);
-doWhileLoop(10);
-forLoop(10);
+doWhileLoop(12);
+forLoop(16);
 
-renderEvenNumbers(19, 23);
+renderEvenNumbers(1, 37);
